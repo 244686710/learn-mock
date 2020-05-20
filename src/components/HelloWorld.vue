@@ -37,15 +37,19 @@ export default {
   props: {
     msg: String
   },
-  mounted() {
-    axios.get('/user').then(res => {
-      console.log(res)
-    }).catch(err =>{
-      throw new Error(err)
-    })
+  mounted () {
+    // axios.get('/user').then(res => {
+    //   console.log(res)
+    // }).catch(err =>{
+    //   throw new Error(err)
+    // })
 
-    axios.post('/register', {user: 'yuyd', pwd: 12121}).then(res => {
-      console.log(res)
+    // axios.post('/register', {user: 'yuyd', pwd: 12121}).then(res => {
+    //   console.log(res)
+    // })
+
+    axios.get('/order/getlist').then(res => {
+      console.log(res.data.list)
     })
   }
 }
