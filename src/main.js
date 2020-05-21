@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-
-if (process.env.NODE_ENV === 'development') {
+debugger
+if (process.env.NODE_ENV === 'mock') {
   require('../mock')
 }
 Vue.config.productionTip = false
