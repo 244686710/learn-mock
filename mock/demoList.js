@@ -8,7 +8,7 @@ export default {
       'id|+1': 1,
       title: Random.cword(5, 7),
       time: Random.date(),
-      url: Random.image()
+      url: Random.dataImage('300x100')
     }]
   }
 }
